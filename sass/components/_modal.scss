@@ -1,0 +1,71 @@
+/* Modal window */
+.backdrop {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  @include size(100%, 100%);
+  background-color: $bs-color-six;
+  transition: $time-animation;
+
+  overflow-y: scroll;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /*  @media screen and (max-width: 479px) {
+    padding: 94px 15px;
+  }*/
+}
+
+.modal {
+  background-color: $secondary-text-color;
+  @extend %boxShadow;
+  border-radius: 4px;
+
+  @media screen and (max-width: 479px) {
+    width: calc(100% - 5px);
+    height: 609px;
+
+    @include positionLeft(
+      absolute,
+      20%,
+      50%,
+      $transform: translate(-50%, -20%)
+    );
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+    min-height: 609px;
+
+    @include positionLeft(
+      absolute,
+      20%,
+      50%,
+      $transform: translate(-50%, -20%)
+    );
+  }
+  @media screen and (min-width: 768px) {
+    @include positionLeft(
+      absolute,
+      50%,
+      50%,
+      $transform: translate(-50%, -50%)
+    );
+    width: 450px;
+    max-height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include positionLeft(
+      absolute,
+      50%,
+      50%,
+      $transform: translate(-50%, -50%)
+    );
+    width: 528px;
+    max-height: 581px;
+  }
+}

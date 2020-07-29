@@ -1,0 +1,47 @@
+%AlignItemsCenter {
+  display: flex;
+  align-items: center;
+}
+
+%JustifyContentCenter {
+  display: flex;
+  justify-content: center;
+}
+
+%FlexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%FlexDirection {
+  display: flex;
+  flex-direction: column;
+}
+
+%JustifyContentBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+%Current {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 4px;
+  width: 100%;
+  background-color: $accent-color;
+  border-radius: 2px;
+}
+
+%boxShadow {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+%policy {
+  display: inline-block;
+  margin-left: 4px;
+  color: $accent-color;
+  text-decoration: underline;
+}

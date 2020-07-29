@@ -1,0 +1,66 @@
+@mixin centeredFlex($type) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin square($size, $radius: 0) {
+  width: $size;
+  height: $size;
+
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+
+@mixin button($sizewidth, $sizeheight, $radius: 0) {
+  min-width: $sizewidth;
+  min-height: $sizeheight;
+
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+
+@mixin text($fontweight, $fontsize, $lineheight, $letterspacing: 0) {
+  font-weight: $fontweight;
+  font-size: $fontsize;
+  line-height: $lineheight;
+
+  @if $letterspacing != 0 {
+    letter-spacing: $letterspacing;
+  }
+}
+
+@mixin positionRight($position, $top, $right, $transform: 0) {
+  position: $position;
+  top: $top;
+  right: $right;
+
+  @if $transform != 0 {
+    transform: $transform;
+  }
+}
+
+@mixin positionLeft($position, $top, $left, $transform: 0) {
+  position: $position;
+  top: $top;
+  left: $left;
+
+  @if $transform != 0 {
+    transform: $transform;
+  }
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin marginBottom($marginbottom, $margintop: 0) {
+  margin-bottom: $marginbottom;
+
+  @if $margintop != 0 {
+    margin-top: $margintop;
+  }
+}

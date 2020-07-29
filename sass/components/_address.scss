@@ -1,0 +1,125 @@
+/* Menu address*/
+.address {
+  &-header {
+    --color3: currentColor;
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}
+.address-header {
+  .link {
+    @extend %AlignItemsCenter;
+    color: $primary-text-color;
+
+    transition: border $time-animation, color $time-animation;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      outline: none;
+    }
+
+    @media screen and (max-width: 767px) {
+      @include text(500, 18px, 1.17, $letterspacing: 0.02em);
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      @include text(500, 12px, 1.17, $letterspacing: 0.02em);
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include text(500, 14px, 1.14, $letterspacing: 0.02em);
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+  .contacts {
+    margin-left: 10px;
+  }
+}
+
+/* Footer address */
+.address {
+  &-footer {
+    display: flex;
+    height: 79px;
+    width: 100%;
+
+    @media screen and (max-width: 1199px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &-subject {
+    @include text(400, 14px, 1.7, $letterspacing: 0);
+    margin-bottom: 4px;
+    display: inline-block;
+  }
+  &-contacts {
+    display: inline-block;
+    margin-bottom: 4px;
+    color: $widht-text-color;
+    @include text(400, 14px, 1.7, $letterspacing: 0);
+    transition: background-color $time-animation, color $time-animation;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      outline: none;
+    }
+    &:nth-last-child(-n + 1) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/*.address-subject {
+  .link {
+    /* @extend %FlexDirection;*/
+/*@include marginBottom(9px, $margintop: 0);*/
+/*
+    display: block;
+    margin-bottom: 8px;
+    color: $widht-text-color;
+    @include text(400, 14px, 1.7, $letterspacing: 0);
+    transition: background-color $time-animation, color $time-animation;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      outline: none;
+    }
+    &:nth-last-child(-n + 1) {
+      margin-bottom: 0;
+    }
+  }
+}*/

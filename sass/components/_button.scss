@@ -1,0 +1,114 @@
+/* Button */
+
+.button {
+  &-hero {
+    display: inline-block;
+    @extend %AlignItemsCenter;
+    padding: 10px 32px;
+    @include button(200px, 50px, $radius: 4px);
+    background-color: $accent-color;
+    color: $secondary-text-color;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 4px $bs-color;
+    @include text(700, 16px, 1.88, $letterspacing: 0.06em);
+    transition: background-color $time-animation, color $time-animation;
+
+    &:focus,
+    &:hover {
+      background-color: $button-color-hover;
+      outline: none;
+    }
+  }
+}
+
+.hero {
+  .icon {
+    margin-left: 10px;
+  }
+}
+
+/* Conteiner filter */
+.button {
+  padding: 6px 22px;
+  margin: 0px;
+  background-color: $element-bg-color;
+  color: $title-text-color;
+  @include button(73px, 38px, $radius: 4px);
+  @include text(500, 16px, 1.6, $letterspacing: 0.03em);
+}
+
+.filter-button {
+  margin-bottom: 34px;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  .button {
+    transition: background-color $time-animation, color $time-animation;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $secondary-text-color;
+      box-shadow: 0px 2px 2px $bs-color-one, 0px 1px 2px $bs-color-two,
+        0px 3px 1px $bs-color-three;
+      outline: none;
+    }
+  }
+}
+
+.button-menu {
+  @include square(40px, $radius: 0);
+  @include centeredFlex(inline-flex);
+  /*display: inline-flex;*/
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  &.is-open .icon-menu {
+    display: block;
+  }
+
+  &.is-open .icon-close {
+    display: none;
+  }
+
+  .icon {
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      transition: $time-animation;
+    }
+  }
+}
+/*
+.button-menu.is-open .icon-close {
+  display: block;
+}
+
+.button-menu.is-open .icon-menu {
+  display: none;
+}*/

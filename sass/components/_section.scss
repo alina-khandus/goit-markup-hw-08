@@ -1,0 +1,186 @@
+/* Section title */
+.section {
+  &-title {
+    color: $title-text-color;
+    text-align: center;
+
+    @media screen and (max-width: 1199px) {
+      @include text(700, 28px, 1.18, $letterspacing: 0);
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include text(700, 36px, 1.17, $letterspacing: 0);
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/* Hero conteiner */
+/*.hero {
+  text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient($bg-color, $bg-color),
+    url("../img/header.jpg");
+  background-color: $bg-color-two;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &-title {
+    margin: 0;
+    @include marginBottom(30px, $margintop: 0px);
+    color: $secondary-text-color;
+    @include text(900, 44px, 1.36, $letterspacing: 0.06em);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}*/
+
+/* Difference conteiner */
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  @include size(1px, 1px);
+  overflow: hidden;
+}
+
+.features {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &-title {
+    margin-bottom: 10px;
+    color: $title-text-color;
+
+    @include text(700, 14px, 1.14, $letterspacing: 0);
+    text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &-text {
+    @include text(400, 14px, 1.7, $letterspacing: 0);
+  }
+
+  &-list {
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 4 * 30px) / 4);
+      margin: 15px;
+    }
+  }
+
+  &-link {
+    border-radius: 4px;
+    background-color: $element-bg-color;
+    @include centeredFlex(inline-flex);
+    margin-bottom: 30px;
+    @include size(100%, 120px);
+  }
+}
+
+/* Services conteiner */
+.services {
+  @extend %FlexWrap;
+
+  &-title {
+    color: $secondary-text-color;
+    @include text(700, 14px, 1.14, $letterspacing: 0);
+    text-transform: uppercase;
+  }
+
+  &-img {
+    display: block;
+  }
+
+  &-link {
+    position: relative;
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+
+  &-actions {
+    @include size(370px, 70px);
+    background-color: $bg-color;
+    @include positionLeft(
+      absolute,
+      100%,
+      50%,
+      $transform: translate(-50%, -100%)
+    );
+    @include centeredFlex(flex);
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+/* Сustomers conteiner */
+.customers {
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    --color4: currentColor;
+    color: $secondary-icon-color;
+  }
+
+  &-linc {
+    height: 90px;
+    margin: 15px;
+    @include centeredFlex(inline-flex);
+
+    @media screen and (max-width: 767px) {
+      width: calc((100% - 2 * 30px) / 2);
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 3 * 30px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 6 * 30px) / 6);
+    }
+  }
+}
+
+.customers-linc {
+  .link {
+    @include size(100%, 90px);
+    @include centeredFlex(inline-flex);
+    border: 1px solid $secondary-icon-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border $time-animation, color $time-animation;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+      color: $accent-color;
+      outline: none;
+    }
+  }
+}

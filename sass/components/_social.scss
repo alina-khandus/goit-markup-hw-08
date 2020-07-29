@@ -1,0 +1,59 @@
+/* Employees social*/
+.social-icon {
+  @include centeredFlex(flex);
+  margin: 0px;
+  --color4: currentColor;
+  color: $secondary-icon-color;
+
+  .social-linc {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.social-linc .link {
+  @include square(44px, $radius: 50%);
+  @include centeredFlex(inline-flex);
+  transition: background-color $time-animation, color $time-animation;
+  background-color: $secondary-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $secondary-text-color;
+    outline: none;
+  }
+}
+
+/* Footer social */
+.social-item {
+  @include centeredFlex(flex);
+  margin: 0px;
+  --color4: currentColor;
+  color: $secondary-text-color;
+
+  .social-footer:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-footer .link {
+  @include square(44px, $radius: 50%);
+  @include centeredFlex(inline-flex);
+  transition: background-color $time-animation, color $time-animation;
+  background-color: $text-color-two;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    outline: none;
+  }
+}
+
+/* Footer title */
+.footer-title {
+  margin-bottom: 20px;
+  @include text(700, 14px, 1.14, $letterspacing: 0.03em);
+  text-transform: uppercase;
+}

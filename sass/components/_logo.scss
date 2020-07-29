@@ -1,0 +1,52 @@
+/* Logo-color-size WebStudio */
+.logo {
+  color: $accent-color;
+  font-family: $fontfamily-logo;
+  display: inline-block;
+
+  outline: none;
+
+  @media screen and (max-width: 767px) {
+    @include text(bold, 24px, 1.17, $letterspacing: 0);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-grow: 1;
+    @include text(bold, 24px, 1.17, $letterspacing: 0);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-grow: 0.5;
+    @include text(bold, 26px, 1.2, $letterspacing: 0);
+  }
+}
+
+.colorblack {
+  color: $colorblack-bg-color;
+}
+.colorwite {
+  color: $secondary-text-color;
+}
+
+.footer {
+  .logo {
+    margin-bottom: 20px;
+    display: inline-block;
+
+    @media screen and (max-width: 767px) {
+      @include text(bold, 24px, 1.17, $letterspacing: 0);
+    }
+
+    @media screen and (min-width: 768px) {
+      @include text(bold, 24px, 1.17, $letterspacing: 0);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 100%;
+
+      @include text(bold, 26px, 1.2, $letterspacing: 0);
+    }
+  }
+}

@@ -1,0 +1,186 @@
+/* Form modal window*/
+.form {
+  position: relative;
+  /* width: 528px;*/
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+
+  &-text {
+    margin-bottom: 30px;
+    @include text(700, 20px, 1.6, $letterspacing: 0);
+    text-align: center;
+    color: $title-text-color;
+  }
+
+  &-label {
+    @include positionLeft(absolute, 50%, 42px, $transform: translateY(-50%));
+    @include text(400, 14px, 1.14, $letterspacing: 0.01em);
+    color: $primary-text-color;
+  }
+}
+
+.close-button {
+  @include positionRight(absolute, 0%, 8px, $transform: translateY(20%));
+  @include size(30px, 30px);
+  @include centeredFlex(inline-flex);
+  border-radius: 50%;
+  background-color: $secondary-text-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  .icon {
+    margin: 0;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      transition: $time-animation;
+    }
+  }
+}
+
+.form-field {
+  position: relative;
+  @extend %FlexDirection;
+  margin-bottom: 28px;
+
+  .icon {
+    margin: 0;
+    @include positionLeft(absolute, 50%, 16px, $transform: translateY(-50%));
+    display: inline-block;
+    @include size(18px, 18px);
+    background-color: $secondary-text-color;
+  }
+}
+
+.form-input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+
+  &:focus ~ .icon {
+    fill: $accent-color;
+    transition: fill $time-animation;
+  }
+
+  &:focus + .form-label,
+  &:not(:placeholder-shown) + .form-label {
+    color: $accent-color;
+    transform: translateY(-40px) translateX(-30px);
+    transition: $time-animation;
+  }
+
+  @media screen and (max-width: 479px) {
+    @include size(100%, 40px);
+  }
+
+  @media screen and (min-width: 480px) {
+    @include size(370px, 40px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include size(448px, 40px);
+  }
+}
+
+.textarea {
+  /* @include size(448px, 120px);*/
+  padding: 12px 16px;
+
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+    transition: $time-animation;
+  }
+
+  &:focus + .label-comment,
+  &:not(:placeholder-shown) + .label-comment {
+    color: $accent-color;
+    transform: translateY(-30px) translateX(-5px);
+    transition: $time-animation;
+  }
+
+  @media screen and (max-width: 479px) {
+    @include size(100%, 120px);
+  }
+
+  @media screen and (min-width: 480px) {
+    @include size(370px, 120px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include size(448px, 120px);
+  }
+}
+
+.label-comment {
+  @include positionLeft(absolute, 10%, 16px, $transform: 0);
+  @include text(400, 14px, 1.14, $letterspacing: 0.01em);
+  color: $primary-text-color;
+}
+
+/* Footer form*/
+.form-footer {
+  display: flex;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .item {
+    @include text(400, 16px, 1.25, $letterspacing: 0);
+    color: $primary-text-color;
+
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    @media screen and (max-width: 479px) {
+      max-width: 450px;
+      width: 100%;
+      min-height: 50px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      min-height: 50px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      min-height: 50px;
+      margin-right: 12px;
+    }
+
+    background-color: inherit;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px $bs-color;
+    border-radius: 4px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

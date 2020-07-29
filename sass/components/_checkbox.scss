@@ -1,0 +1,68 @@
+/*Checkbox*/
+.policy-form {
+  margin-bottom: 30px;
+  color: $primary-text-color;
+
+  @media screen and (max-width: 1199px) {
+    @include text(400, 12px, 1.7, $letterspacing: 0);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include text(400, 14px, 1.7, $letterspacing: 0);
+  }
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  ~ .checkbox-label::before {
+    content: "";
+    display: block;
+    @include size(16px, 16px);
+
+    border: 2px solid $title-text-color;
+    border-radius: 2px;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+
+  &:checked ~ .checkbox-label::before {
+    background-color: $accent-color;
+    border-color: transparent;
+    background-image: url("../img/icon_check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    @include size(16px, 16px);
+
+    transition: $time-animation;
+  }
+
+  &-label {
+    @include centeredFlex(flex);
+  }
+}
+
+/*.policy-checkbox {
+  @media screen and (max-width: 479px) {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+}*/
+
+/*.checkbox-label {
+  @include centeredFlex(flex);
+}*/
+
+.policy {
+  display: inline-block;
+  margin-left: 4px;
+  color: $accent-color;
+  text-decoration: underline;
+
+  &:visited {
+    @extend %policy;
+  }
+}
