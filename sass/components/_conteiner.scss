@@ -2,7 +2,6 @@
 .conteiner {
   max-width: 1200px;
   margin: 0px auto 0px;
-  /* padding: 60px 15px;*/
 
   @media screen and (max-width: 479px) {
     padding: 60px 15px;
@@ -28,6 +27,12 @@
 
 /*Header conteiner*/
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid $secondary-color;
+  background-color: $secondary-text-color;
+
   border: 1px solid $secondary-color;
   border-left: 0px;
   border-right: 0px;
@@ -42,14 +47,6 @@
   }
 }
 
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  border-bottom: 1px solid $secondary-color;
-  background-color: $secondary-text-color;
-}
-
 /* Footer conteiner */
 .footer {
   .conteiner {
@@ -60,19 +57,14 @@
     @media screen and (max-width: 767px) {
       flex-direction: column;
       align-items: center;
-      /* padding: 60px 0px;*/
-
-      /* .item:not(:last-child) {
-        margin-bottom: 30px;
-      }*/
     }
+
     @media screen and (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
-      align-content: flex-end;
-      /*align-content: center;*/
-      /*align-items: baseline;*/
+      justify-content: center;
     }
+
     @media screen and (min-width: 1200px) {
       flex-direction: row;
       justify-content: space-between;
@@ -81,15 +73,28 @@
   }
 }
 
-.footer-mailing {
-  outline: solid 3px black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+.footer {
+  &-mailing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.footer-title {
-  display: inline-block;
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 0px;
+    }
+  }
+
+  &-title {
+    display: inline-block;
+  }
 }
 
 .address-conteiner {
@@ -104,6 +109,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
   }
 }
 
@@ -119,13 +125,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
   }
 }
-/* Footer conteiner */
-/* .conteiner {
-  @extend %JustifyContentBetween;
-  align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-*/

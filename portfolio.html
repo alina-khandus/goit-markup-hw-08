@@ -17,7 +17,7 @@
       <div class="conteiner">
         <nav class="nav-conteiner">
           <a href="./index.html" class="logo">
-            Web <span class="colorblack">Studio</span>
+            <span>Web <span class="colorblack">Studio</span></span>
           </a>
           <button
             type="button"
@@ -28,12 +28,12 @@
           >
             <svg class="icon" width="24" height="16" aria-label="menu switch">
               <use
-                class="icon-menu"
-                href="./img/symbol-defs3.svg#menu_24px"
-              ></use>
-              <use
                 class="icon-close"
                 href="./img/symbol-defs3.svg#close_24px"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./img/symbol-defs3.svg#menu_24px"
               ></use>
             </svg>
           </button>
@@ -97,13 +97,60 @@
           <li class="item">
             <a href="#" class="portfolio-card">
               <div class="portfolio-hover">
-                <img
-                  src="./img/tekhnokriak.jpg"
-                  alt="photo-website"
-                  width="370"
-                  height="294"
-                  class="portfolio-img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/mob-tekhnokriak.webp    1x,
+                      ./img/mob-tekhnokriak@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/mob-tekhnokriak.jpg    1x,
+                      ./img/mob-tekhnokriak@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-tekhnokriak.webp    1x,
+                      ./img/desk-tekhnokriak@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-tekhnokriak.jpg    1x,
+                      ./img/desk-tekhnokriak@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-tekhnokriak.webp    1x,
+                      ./img/tabl-tekhnokriak@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-tekhnokriak.jpg    1x,
+                      ./img/tabl-tekhnokriak@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./img/tekhnokriak.jpg"
+                    alt="photo-website"
+                    width="370"
+                    height="294"
+                    class="portfolio-img"
+                  />
+                </picture>
                 <p class="portfolio-description">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -120,13 +167,57 @@
           <li class="item">
             <a href="#" class="portfolio-card">
               <div class="portfolio-hover">
-                <img
-                  src="./img/poster.jpg"
-                  alt="poster-basketball-players"
-                  width="370"
-                  height="294"
-                  class="portfolio-img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/mob-poster.webp    1x,
+                      ./img/mob-poster@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/mob-poster.jpg 1x, ./img/mob-poster@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-poster.webp    1x,
+                      ./img/desk-poster@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-poster.jpg    1x,
+                      ./img/desk-poster@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-poster.webp    1x,
+                      ./img/tabl-poster@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-poster.jpg    1x,
+                      ./img/tabl-poster@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./img/poster.jpg"
+                    alt="poster-basketball-players"
+                    width="370"
+                    height="294"
+                    class="portfolio-img"
+                  />
+                </picture>
                 <p class="portfolio-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Dignissimos, eaque perspiciatis. Adipisci commodi corporis
@@ -144,13 +235,60 @@
           <li class="item">
             <a href="#" class="portfolio-card">
               <div class="portfolio-hover">
-                <img
-                  src="./img/logo_seafood.jpg"
-                  alt="logo-restoran-seafood"
-                  width="370"
-                  height="294"
-                  class="portfolio-img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/mob-logo_seafood.webp    1x,
+                      ./img/mob-logo_seafood@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/mob-logo_seafood.jpg    1x,
+                      ./img/mob-logo_seafood@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-logo_seafood.webp    1x,
+                      ./img/desk-logo_seafood@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-logo_seafood.jpg    1x,
+                      ./img/desk-logo_seafood@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-logo_seafood.webp    1x,
+                      ./img/tabl-logo_seafood@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-logo_seafood.jpg    1x,
+                      ./img/tabl-logo_seafood@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./img/logo_seafood.jpg"
+                    alt="logo-restoran-seafood"
+                    width="370"
+                    height="294"
+                    class="portfolio-img"
+                  />
+                </picture>
                 <p class="portfolio-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Dignissimos, eaque perspiciatis. Adipisci commodi corporis
@@ -166,13 +304,60 @@
           <li class="item">
             <a href="#" class="portfolio-card">
               <div class="portfolio-hover">
-                <img
-                  src="./img/wireless_headphones.jpg"
-                  alt="photo-wireless-headphonesr"
-                  width="370"
-                  height="294"
-                  class="portfolio-img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/mob-wireless_headphones.webp    1x,
+                      ./img/mob-wireless_headphones@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/mob-wireless_headphones.jpg    1x,
+                      ./img/mob-wireless_headphones@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-wireless_headphones.webp    1x,
+                      ./img/desk-wireless_headphones@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-wireless_headphones.jpg    1x,
+                      ./img/desk-wireless_headphones@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-wireless_headphones.webp    1x,
+                      ./img/tabl-wireless_headphones@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-wireless_headphones.jpg    1x,
+                      ./img/tabl-wireless_headphones@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./img/wireless_headphones.jpg"
+                    alt="photo-wireless-headphonesr"
+                    width="370"
+                    height="294"
+                    class="portfolio-img"
+                  />
+                </picture>
                 <p class="portfolio-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Dignissimos, eaque perspiciatis. Adipisci commodi corporis
@@ -188,13 +373,49 @@
           <li class="item">
             <a href="#" class="portfolio-card">
               <div class="portfolio-hover">
-                <img
-                  src="./img/boxes.jpg"
-                  alt="photo-two-boxes"
-                  width="370"
-                  height="294"
-                  class="portfolio-img"
-                />
+                <picture>
+                  <source
+                    srcset="./img/mob-boxes.webp 1x, ./img/mob-boxes@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/mob-boxes.jpg 1x, ./img/mob-boxes@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-boxes.webp    1x,
+                      ./img/desk-boxes@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/desk-boxes.jpg 1x, ./img/desk-boxes@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-boxes.webp    1x,
+                      ./img/tabl-boxes@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/tabl-boxes.jpg 1x, ./img/tabl-boxes@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./img/boxes.jpg"
+                    alt="photo-two-boxes"
+                    width="370"
+                    height="294"
+                    class="portfolio-img"
+                  />
+                </picture>
+
                 <p class="portfolio-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Dignissimos, eaque perspiciatis. Adipisci commodi corporis
@@ -210,13 +431,61 @@
           <li class="item">
             <a href="#" class="portfolio-card">
               <div class="portfolio-hover">
-                <img
-                  src="./img/monitor.jpg"
-                  alt="photo-monitor"
-                  width="370"
-                  height="294"
-                  class="portfolio-img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/mob-monitor.webp    1x,
+                      ./img/mob-monitor@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/mob-monitor.jpg    1x,
+                      ./img/mob-monitor@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-monitor.webp    1x,
+                      ./img/desk-monitor@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-monitor.jpg    1x,
+                      ./img/desk-monitor@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-monitor.webp    1x,
+                      ./img/tabl-monitor@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-monitor.jpg    1x,
+                      ./img/tabl-monitor@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./img/monitor.jpg"
+                    alt="photo-monitor"
+                    width="370"
+                    height="294"
+                    class="portfolio-img"
+                  />
+                </picture>
+
                 <p class="portfolio-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Dignissimos, eaque perspiciatis. Adipisci commodi corporis
@@ -232,13 +501,60 @@
           <li class="item">
             <a href="#" class="portfolio-card">
               <div class="portfolio-hover">
-                <img
-                  src="./img/open-book.jpg"
-                  alt="photo-open-book"
-                  width="370"
-                  height="294"
-                  class="portfolio-img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/mob-open-book.webp    1x,
+                      ./img/mob-open-book@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/mob-open-book.jpg    1x,
+                      ./img/mob-open-book@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-open-book.webp    1x,
+                      ./img/desk-open-book@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-open-book.jpg    1x,
+                      ./img/desk-open-book@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-open-book.webp    1x,
+                      ./img/tabl-open-book@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-open-book.jpg    1x,
+                      ./img/tabl-open-book@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./img/open-book.jpg"
+                    alt="photo-open-book"
+                    width="370"
+                    height="294"
+                    class="portfolio-img"
+                  />
+                </picture>
                 <p class="portfolio-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Dignissimos, eaque perspiciatis. Adipisci commodi corporis
@@ -254,13 +570,48 @@
           <li class="item">
             <a href="#" class="portfolio-card">
               <div class="portfolio-hover">
-                <img
-                  src="./img/label.jpg"
-                  alt="photo-label"
-                  width="370"
-                  height="294"
-                  class="portfolio-img"
-                />
+                <picture>
+                  <source
+                    srcset="./img/mob-label.webp 1x, ./img/mob-label@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/mob-label.jpg 1x, ./img/mob-label@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-label.webp    1x,
+                      ./img/desk-label@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/desk-label.jpg 1x, ./img/desk-label@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-label.webp    1x,
+                      ./img/tabl-label@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./img/tabl-label.jpg 1x, ./img/tabl-label@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./img/label.jpg"
+                    alt="photo-label"
+                    width="370"
+                    height="294"
+                    class="portfolio-img"
+                  />
+                </picture>
                 <p class="portfolio-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Dignissimos, eaque perspiciatis. Adipisci commodi corporis
@@ -276,13 +627,60 @@
           <li class="item">
             <a href="#" class="portfolio-card">
               <div class="portfolio-hover">
-                <img
-                  src="./img/hands_laptop.jpg"
-                  alt="photo-hands-laptop"
-                  width="370"
-                  height="294"
-                  class="portfolio-img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/mob-hands_laptop.webp    1x,
+                      ./img/mob-hands_laptop@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/mob-hands_laptop.jpg    1x,
+                      ./img/mob-hands_laptop@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-hands_laptop.webp    1x,
+                      ./img/desk-hands_laptop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/desk-hands_laptop.jpg    1x,
+                      ./img/desk-hands_laptop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-hands_laptop.webp    1x,
+                      ./img/tabl-hands_laptop@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/tabl-hands_laptop.jpg    1x,
+                      ./img/tabl-hands_laptop@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="./img/hands_laptop.jpg"
+                    alt="photo-hands-laptop"
+                    width="370"
+                    height="294"
+                    class="portfolio-img"
+                  />
+                </picture>
                 <p class="portfolio-description">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Dignissimos, eaque perspiciatis. Adipisci commodi corporis
@@ -302,26 +700,23 @@
     <!--Footer conteiner-->
     <footer class="footer">
       <div class="conteiner">
-        <div>
+        <div class="address-conteiner">
           <a href="./index.html" class="logo">
             Web <span class="colorwite">Studio</span>
           </a>
 
-          <div class="address-footer">
-            <address class="address-title">
-              г. Киев, пр-т Леси Украинки, 26
-            </address>
-
-            <address class="address-subject">
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-            </address>
-          </div>
+          <address class="address-footer">
+            <span class="address-subject">г. Киев, пр-т Леси Украинки, 26</span>
+            <a class="address-contacts" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a class="address-contacts" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </address>
         </div>
 
-        <div>
+        <div class="social-colneiner">
           <b class="footer-title">Присоединяйтесь</b>
           <ul class="social-item">
             <li class="social-footer">
@@ -400,5 +795,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

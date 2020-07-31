@@ -101,25 +101,3 @@
     }
   }
 }
-
-/*.address-subject {
-  .link {
-    /* @extend %FlexDirection;*/
-/*@include marginBottom(9px, $margintop: 0);*/
-/*
-    display: block;
-    margin-bottom: 8px;
-    color: $widht-text-color;
-    @include text(400, 14px, 1.7, $letterspacing: 0);
-    transition: background-color $time-animation, color $time-animation;
-
-    &:hover,
-    &:focus {
-      color: $accent-color;
-      outline: none;
-    }
-    &:nth-last-child(-n + 1) {
-      margin-bottom: 0;
-    }
-  }
-}*/

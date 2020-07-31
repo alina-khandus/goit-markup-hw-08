@@ -34,20 +34,16 @@
       &:not(:last-child) {
         margin-bottom: 30px;
       }
-
-      outline: solid 3px black;
     }
 
     @media screen and (min-width: 768px) {
       width: calc((100% - 2 * 30px) / 2);
       margin: 15px;
-      outline: solid 3px red;
     }
 
     @media screen and (min-width: 1200px) {
       width: calc((100% - 4 * 30px) / 4);
       margin: 15px;
-      outline: solid 3px blue;
     }
   }
 
@@ -58,11 +54,24 @@
   }
 }
 
+.employees-link img {
+  @media screen and (max-width: 767px) {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 767px) {
+    height: 260px;
+    width: 100%;
+  }
+}
+
 /* Conteiner portfolio */
 .portfolio-list {
   @media screen and (min-width: 767px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 
   @media screen and (min-width: 1023px) {
@@ -71,35 +80,29 @@
   }
 
   .item {
-    /* @extend %JustifyContentCenter;
-    width: 450px;
-    @include marginBottom(30px, $margintop: 0);
-    margin-right: 30px;*/
+    height: 404px;
 
     background: $secondary-text-color;
     border: 1px solid $third-color;
     border-top: 0px;
 
     @media screen and (max-width: 767px) {
+      height: 100%;
       width: 100%;
 
       &:not(:last-child) {
         margin-bottom: 30px;
       }
-
-      outline: solid 3px black;
     }
 
     @media screen and (min-width: 768px) {
       width: calc((100% - 2 * 30px) / 2);
       margin: 15px;
-      outline: solid 3px red;
     }
 
     @media screen and (min-width: 1200px) {
       width: calc((100% - 3 * 30px) / 3);
       margin: 15px;
-      outline: solid 3px blue;
     }
   }
 }
@@ -108,31 +111,41 @@
   padding: 20px 24px;
 
   &-description {
-    margin: 0px;
-    @include text(400, 18px, 1.57, $letterspacing: 0.03em);
     position: absolute;
     top: 0;
     @include size(100%, 100%);
-    padding: 63px 24px;
+    @include text(400, 18px, 1.56, $letterspacing: 0.03em);
     background-color: $background-third-color;
     color: $secondary-text-color;
     transform: translateY(100%);
     transition: transform $time-animation;
+
+    @media screen and (min-width: 480px) {
+      padding: 77px 24px;
+    }
+    @media screen and (min-width: 768px) {
+      padding: 54px 24px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 63px 24px;
+    }
   }
 
   &-card {
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: 1px 4px 6px $bs-color-four, 0px 4px 4px $bs-color-five,
         0px 1px 1px $bs-color-one;
+      outline: none;
     }
+  }
 
+  &-card {
     &:focus .portfolio-description,
     &:hover .portfolio-description {
       transform: translateY(0);
+      outline: none;
     }
-  }
-  &-img {
-    display: block;
   }
 
   &-hover {
@@ -141,14 +154,20 @@
   }
 
   &-title {
-    margin: 0;
-    @include marginBottom(4px, $margintop: 0);
+    margin-bottom: 4px;
     color: $title-text-color;
     @include text(700, 18px, 2, $letterspacing: 0.06em);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   &-text {
-    margin: 0px;
     @include text(400, 16px, 1.88, $letterspacing: 0);
+  }
+
+  &-img {
+    width: 100%;
+    height: 100%;
   }
 }

@@ -135,6 +135,10 @@
 .form-footer {
   display: flex;
 
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
   @media screen and (max-width: 1199px) {
     flex-direction: column;
     align-items: center;
@@ -154,7 +158,7 @@
     padding-bottom: 15px;
 
     @media screen and (max-width: 479px) {
-      max-width: 450px;
+      /* max-width: 450px;*/
       width: 100%;
       min-height: 50px;
       margin-bottom: 20px;

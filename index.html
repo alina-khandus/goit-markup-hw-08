@@ -75,7 +75,7 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button data-modal-open class="button-hero">Заказать услугу</button>
+        <button data-modal-open class="button-modal">Заказать услугу</button>
 
         <div data-modal class="backdrop is-hidden">
           <div class="modal">
@@ -220,34 +220,79 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="services">
             <li class="services-link">
-              <img
-                class="services-img"
-                src="./img/laptop.jpg"
-                alt="photo-laptop"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desk-laptop.webp    1x,
+                    ./img/desk-laptop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./img/desk-laptop.jpg 1x, ./img/desk-laptop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/laptop.jpg"
+                  alt="photo-laptop"
+                  width="370"
+                  height="294"
+                  class="services-img"
+                />
+              </picture>
               <div class="services-actions">
                 <h3 class="services-title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="services-link">
-              <img
-                class="services-img"
-                src="./img/mobile.jpg"
-                alt="photo-mobile"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desk-mobile.webp    1x,
+                    ./img/desk-mobile@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./img/desk-mobile.jpg 1x, ./img/desk-mobile@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/mobile.jpg"
+                  alt="photo-mobile"
+                  width="370"
+                  height="294"
+                  class="services-img"
+                />
+              </picture>
               <div class="services-actions">
                 <h3 class="services-title">Мобильные приложения</h3>
               </div>
             </li>
             <li class="services-link">
-              <img
-                class="services-img"
-                src="./img/design.jpg"
-                alt="photo-design"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desk-design.webp    1x,
+                    ./img/desk-design@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./img/desk-design.jpg 1x, ./img/desk-design@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./img/design.jpg"
+                  alt="photo-design"
+                  width="370"
+                  height="294"
+                  class="services-img"
+                />
+              </picture>
               <div class="services-actions">
                 <h3 class="services-title">Дизайнерские решения</h3>
               </div>
@@ -262,11 +307,58 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="employees">
             <li class="employees-link">
-              <img
-                src="./img/nikolay_kucherenko.jpg"
-                alt="employee-photo"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/mob-nikolay_kucherenko.webp    1x,
+                    ./img/mob-nikolay_kucherenko@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/mob-nikolay_kucherenko.jpg    1x,
+                    ./img/mob-nikolay_kucherenko@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/desk-nikolay_kucherenko.webp    1x,
+                    ./img/desk-nikolay_kucherenko@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/desk-nikolay_kucherenko.jpg    1x,
+                    ./img/desk-nikolay_kucherenko@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tabl-nikolay_kucherenko.webp    1x,
+                    ./img/tabl-nikolay_kucherenko@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/tabl-nikolay_kucherenko.jpg    1x,
+                    ./img/tabl-nikolay_kucherenko@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./img/nikolay_kucherenko.jpg"
+                  alt="employee-photo"
+                  width="270"
+                />
+              </picture>
               <div class="employees-item">
                 <h3 class="employees-title">Николай Кучеренко</h3>
                 <p class="employees-text">Product Designer</p>
@@ -327,11 +419,58 @@
               </div>
             </li>
             <li class="employees-link">
-              <img
-                src="./img/olga_ivanova.jpg"
-                alt="employee-photo"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/mob-olga_ivanova.webp    1x,
+                    ./img/mob-olga_ivanova@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/mob-olga_ivanova.jpg    1x,
+                    ./img/mob-olga_ivanova@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/desk-olga_ivanova.webp    1x,
+                    ./img/desk-olga_ivanova@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/desk-olga_ivanova.jpg    1x,
+                    ./img/desk-olga_ivanova@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tabl-olga_ivanova.webp    1x,
+                    ./img/tabl-olga_ivanova@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/tabl-olga_ivanova.jpg    1x,
+                    ./img/tabl-olga_ivanova@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./img/olga_ivanova.jpg"
+                  alt="employee-photo"
+                  width="270"
+                />
+              </picture>
               <div class="employees-item">
                 <h3 class="employees-title">Ольга Иванова</h3>
                 <p class="employees-text">Frontend Developer</p>
@@ -392,11 +531,58 @@
               </div>
             </li>
             <li class="employees-link">
-              <img
-                src="./img/andriy_shevchenko.jpg"
-                alt="employee-photo"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/mob-andriy_shevchenko.webp    1x,
+                    ./img/mob-andriy_shevchenko@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/mob-andriy_shevchenko.jpg    1x,
+                    ./img/mob-andriy_shevchenko@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/desk-andriy_shevchenko.webp    1x,
+                    ./img/desk-andriy_shevchenko@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/desk-andriy_shevchenko.jpg    1x,
+                    ./img/desk-andriy_shevchenko@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tabl-andriy_shevchenko.webp    1x,
+                    ./img/tabl-andriy_shevchenko@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/tabl-andriy_shevchenko.jpg    1x,
+                    ./img/tabl-andriy_shevchenko@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./img/andriy_shevchenko.jpg"
+                  alt="employee-photo"
+                  width="270"
+                />
+              </picture>
               <div class="employees-item">
                 <h3 class="employees-title">Андрей Шевченко</h3>
                 <p class="employees-text">Marketing</p>
@@ -457,11 +643,58 @@
               </div>
             </li>
             <li class="employees-link">
-              <img
-                src="./img/ivan_nikolaiev.jpg"
-                alt="employee-photo"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/mob-ivan_nikolaiev.webp    1x,
+                    ./img/mob-ivan_nikolaiev@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/mob-ivan_nikolaiev.jpg    1x,
+                    ./img/mob-ivan_nikolaiev@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/desk-ivan_nikolaiev.webp    1x,
+                    ./img/desk-ivan_nikolaiev@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/desk-ivan_nikolaiev.jpg    1x,
+                    ./img/desk-ivan_nikolaiev@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tabl-ivan_nikolaiev.webp    1x,
+                    ./img/tabl-ivan_nikolaiev@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./img/tabl-ivan_nikolaiev.jpg    1x,
+                    ./img/tabl-ivan_nikolaiev@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./img/ivan_nikolaiev.jpg"
+                  alt="employee-photo"
+                  width="270"
+                />
+              </picture>
               <div class="employees-item">
                 <h3 class="employees-title">Иван Николаев</h3>
                 <p class="employees-text">UI Designer</p>
@@ -665,7 +898,7 @@
               id="mail"
               placeholder="E-mail"
             />
-            <button type="submit" class="button-hero">
+            <button type="submit" class="button-filter">
               Подписаться
               <svg class="icon" width="24" height="24">
                 <use href="./img/symbol-defs3.svg#icon_send"></use>
