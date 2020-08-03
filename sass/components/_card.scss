@@ -37,12 +37,12 @@
     }
 
     @media screen and (min-width: 768px) {
-      width: calc((100% - 2 * 30px) / 2);
+      max-width: calc((100% - 2 * 30px) / 2);
       margin: 15px;
     }
 
     @media screen and (min-width: 1200px) {
-      width: calc((100% - 4 * 30px) / 4);
+      max-width: calc((100% - 4 * 30px) / 4);
       margin: 15px;
     }
   }
@@ -99,12 +99,12 @@
     }
 
     @media screen and (min-width: 768px) {
-      width: calc((100% - 2 * 30px) / 2);
+      max-width: calc((100% - 2 * 30px) / 2);
       margin: 15px;
     }
 
     @media screen and (min-width: 1200px) {
-      width: calc((100% - 3 * 30px) / 3);
+      max-width: calc((100% - 3 * 30px) / 3);
       margin: 15px;
     }
   }
@@ -172,12 +172,3 @@
       0px 1px 1px $bs-color-one;
   }
 }
-
-/*.portfolio-hover {
-  &:hover,
-  &:focus {
-    box-shadow: 1px 4px 6px $bs-color-four, 0px 4px 4px $bs-color-five,
-      0px 1px 1px $bs-color-one;
-    outline: none;
-  }
-}*/

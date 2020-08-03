@@ -14,10 +14,6 @@
     opacity: 0;
     pointer-events: none;
   }
-
-  /*  @media screen and (max-width: 479px) {
-    padding: 94px 15px;
-  }*/
 }
 
 .modal {
@@ -26,7 +22,7 @@
   border-radius: 4px;
 
   @media screen and (max-width: 479px) {
-    width: calc(100% - 5px);
+    max-width: calc(100% - 5px);
     min-height: 609px;
 
     @include positionLeft(
@@ -38,7 +34,7 @@
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 450px;
+    max-width: 450px;
     min-height: 609px;
 
     @include positionLeft(
@@ -55,7 +51,7 @@
       50%,
       $transform: translate(-50%, -50%)
     );
-    width: 450px;
+    max-width: 450px;
     min-height: 609px;
   }
   @media screen and (min-width: 1200px) {
@@ -65,7 +61,7 @@
       50%,
       $transform: translate(-50%, -50%)
     );
-    width: 528px;
+    max-width: 528px;
     min-height: 581px;
   }
 }
