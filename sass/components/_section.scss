@@ -220,15 +220,15 @@
     @include centeredFlex(inline-flex);
 
     @media screen and (max-width: 767px) {
-      max-width: calc((100% - 2 * 30px) / 2);
+      min-width: calc((100% - 2 * 30px) / 2);
     }
 
     @media screen and (min-width: 768px) {
-      max-width: calc((100% - 3 * 30px) / 3);
+      min-width: calc((100% - 3 * 30px) / 3);
     }
 
     @media screen and (min-width: 1200px) {
-      max-width: calc((100% - 6 * 30px) / 6);
+      min-width: calc((100% - 6 * 30px) / 6);
     }
   }
 }

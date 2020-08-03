@@ -566,6 +566,22 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .address-conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .social-colneiner {
     display: -webkit-box;
@@ -935,7 +951,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   height: 79px;
-  width: 100%;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1435,19 +1451,19 @@ footer {
 
 @media screen and (max-width: 767px) {
   .customers-linc {
-    max-width: calc((100% - 2 * 30px) / 2);
+    min-width: calc((100% - 2 * 30px) / 2);
   }
 }
 
 @media screen and (min-width: 768px) {
   .customers-linc {
-    max-width: calc((100% - 3 * 30px) / 3);
+    min-width: calc((100% - 3 * 30px) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .customers-linc {
-    max-width: calc((100% - 6 * 30px) / 6);
+    min-width: calc((100% - 6 * 30px) / 6);
   }
 }
 
@@ -2120,7 +2136,7 @@ footer {
 
 @media screen and (min-width: 480px) {
   .form-footer .item {
-    max-width: 450px;
+    min-width: 450px;
     min-height: 50px;
     margin-bottom: 20px;
   }
@@ -2128,7 +2144,7 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .form-footer .item {
-    max-width: 358px;
+    min-width: 358px;
     min-height: 50px;
     margin-right: 12px;
   }
