@@ -113,15 +113,6 @@
 .portfolio {
   padding: 20px 24px;
 
-  &-card {
-    &:hover,
-    &:focus {
-      box-shadow: 1px 4px 6px $bs-color-four, 0px 4px 4px $bs-color-five,
-        0px 1px 1px $bs-color-one;
-      /* outline: none;*/
-    }
-  }
-
   &-description {
     position: absolute;
     top: 0;
@@ -142,15 +133,6 @@
       padding: 63px 24px;
     }
   }
-
-  /*&-card {
-    &:hover,
-    &:focus {
-      box-shadow: 1px 4px 6px $bs-color-four, 0px 4px 4px $bs-color-five,
-        0px 1px 1px $bs-color-one;
-      outline: none;
-    }
-  }*/
 
   &-card {
     &:focus .portfolio-description,
@@ -183,3 +165,19 @@
     height: 100%;
   }
 }
+.portfolio-list .item {
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px $bs-color-four, 0px 4px 4px $bs-color-five,
+      0px 1px 1px $bs-color-one;
+  }
+}
+
+/*.portfolio-hover {
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px $bs-color-four, 0px 4px 4px $bs-color-five,
+      0px 1px 1px $bs-color-one;
+    outline: none;
+  }
+}*/

@@ -1619,20 +1619,6 @@ footer {
 
 .portfolio {
   padding: 20px 24px;
-  /*&-card {
-    &:hover,
-    &:focus {
-      box-shadow: 1px 4px 6px $bs-color-four, 0px 4px 4px $bs-color-five,
-        0px 1px 1px $bs-color-one;
-      outline: none;
-    }
-  }*/
-}
-
-.portfolio-card:hover, .portfolio-card:focus {
-  -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-          box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-  /* outline: none;*/
 }
 
 .portfolio-description {
@@ -1707,6 +1693,19 @@ footer {
   height: 100%;
 }
 
+.portfolio-list .item:hover, .portfolio-list .item:focus {
+  -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+/*.portfolio-hover {
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px $bs-color-four, 0px 4px 4px $bs-color-five,
+      0px 1px 1px $bs-color-one;
+    outline: none;
+  }
+}*/
 /* Employees social*/
 .social-icon {
   display: -webkit-box;
