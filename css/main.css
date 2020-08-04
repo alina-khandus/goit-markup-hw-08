@@ -737,7 +737,7 @@ footer {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    min-width: 100%;
     height: 393px;
     border: 1px solid #ececec;
     border-left: 0px;
@@ -1533,7 +1533,7 @@ footer {
 
 @media screen and (max-width: 767px) {
   .employees-link {
-    width: 100%;
+    max-width: 100%;
   }
   .employees-link:not(:last-child) {
     margin-bottom: 30px;
